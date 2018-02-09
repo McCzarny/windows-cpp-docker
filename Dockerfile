@@ -9,7 +9,7 @@ RUN $WebClient = New-Object System.Net.WebClient; \
     $WebClient.DownloadFile('http://download.oracle.com/otn-pub/java/jdk/9.0.1+11/jre-9.0.1_windows-x64_bin.exe', 'jre-9.0.1_windows-x64_bin.exe') ; \
     Start-Process .\jre-9.0.1_windows-x64_bin.exe -ArgumentList '/s' -Wait ; \
     Remove-Item .\*.exe; \
-    WebClient.DownloadFile(https://gitlab-runner-downloads.s3.amazonaws.com/latest/binaries/gitlab-runner-windows-amd64.exe, gitlab-runner.exe); \
+    WebClient.DownloadFile(https://gitlab-runner-downloads.s3.amazonaws.com/latest/binaries/gitlab-runner-windows-amd64.exe, gitlab-runner.exe);
 
 # SHELL ["cmd.exe", "/s", "/c", "C:\\Program Files (x86)\\Microsoft Visual C++ Build Tools\\vcbuildtools.bat", "x86_amd64"]
 
